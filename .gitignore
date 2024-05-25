@@ -21,56 +21,29 @@
 //     })
 // };
 
-///////
-// let searchInputEl = document.querySelector('.search-input');
-// let searchBtnEl = document.querySelector('#search-btn'); // Corrected selector
-// let resultArea = document.querySelector('.result-area');
-
-// // Event listener for search button click
-// searchBtnEl.addEventListener('click', getRecipes);
-
-// function getRecipes() {
-//   let searchTerm = searchInputEl.value.trim(); // Use 'value' for text input
-
-//   // Construct the API URL with proper parameter inclusion
-//   let apiUrl = `https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood`;
-//   if (searchTerm) {
-//     apiUrl += `&s=${searchTerm}`; // Use '&' for additional parameters
-//   }
-
-//   fetch(apiUrl)
-//     .then(response => response.json()) // Parse response as JSON
-//     .then(data => {
-//       // Handle successful data retrieval
-//       console.log("Fetched recipes:", data);
-//       // Process the data to display results (implementation not provided)
-//     })
-//     .catch(error => {
-//       // Handle errors during API call or data processing
-//       console.error("Error fetching recipes:", error);
-//     });
-// }
-
-// function displayRecipes(recipes) {
-//     if(recipes.meals.length == null) {
-//         resultAreaEl.innerHTML = "non data";
-//         return;
+//  function displayRecipes(recipes) {
+//  resultAreaEl.innerHTML = "";    // Clear existing content
+//       if(recipes.meals.length == null) {
+//           resultAreaEl.innerHTML = "non data";
+//           return;
+          
+//       }
+  
+//       recipes.meals.foreach(recipe=> {
+//         resultAreaEl.innerHTML += 
+//         `<div class="card">
+//         <div class="card-img">
+//             <img src="${recipe.strMealThumb}" alt="">
+//         </div>
         
-//     }
+//         <div class="card-info">
+//             <h2> ${recipe.strMeal} </h2>
+//             <br>
+//             <a href="recipe-details">Get Recipe</a>
+//         </div>
+//     </div>`;
+//       })
+//     };
 
-//     recipes.meals.foreach(recipe=> {
-//       resuleAeraEl.innerHTML += 
-//       `<div class="card">
-//       <div class="card-img">
-//           <img src="${recipe.strMealThumb}" alt="">
-//       </div>
-      
-//       <div class="card-info">
-//           <h2> ${recipe.strMeal} </h2>
-//           <br>
-//           <a href="recipe-details">Get Recipe</a>
-//       </div>
-//   </div>`;
-//     }) 
-// }
-//////////////////////////////////
+///////
+
