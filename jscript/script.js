@@ -8,7 +8,7 @@ searchBtnEl.addEventListener('click', getRecipes);
 
 function getRecipes() {
   let searchTerm = searchInputEl.value.trim();
-  let apiUrl = `https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood${searchTerm}`;
+  let apiUrl = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`;
 
   // Fetch data and handle response
   fetch(apiUrl)
@@ -42,6 +42,7 @@ function displayRecipes(recipes) {
             <a href="#" onclick="test(id)">Get Recipe</a>
           </div>
         </div>
+       
       `;
     });
   } else {
