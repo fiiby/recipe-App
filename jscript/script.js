@@ -34,10 +34,10 @@ function displayRecipes(recipes) {
       resultAreaEl.innerHTML += `
         <div class="card">
           <div class="card-img">
-            <img src="${recipe.strMealThumb}" alt="">
+            <img src="${recipe.strMealThumb}" alt=""> 
           </div>
           <div class="card-info">
-            <h2>${recipe.strMeal}</h2>
+            <h2>${recipe.strMeal}</h2>  
             <br>
             <a href="#" onclick="test(id)">Get Recipe</a>
           </div>
@@ -48,4 +48,4 @@ function displayRecipes(recipes) {
     // Handle case where recipes object is null (e.g., API call failed)
     console.error("Error fetching recipes");
   }
-}
+};
