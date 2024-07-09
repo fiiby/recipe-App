@@ -5,6 +5,7 @@ let resultAreaEl = document.querySelector('.result-area');
 
 // Event listener
 searchBtnEl.addEventListener('click', getRecipes);
+resultAreaEl.addEventListenereventListner('click',getDetails);
 
 function getRecipes() {
   let searchTerm = searchInputEl.value.trim();
@@ -39,7 +40,7 @@ function displayRecipes(recipes) {
           <div class="card-info">
             <h2>${recipe.strMeal}</h2>  
             <br>
-            <a href="#" onclick="test(id)">Get Recipe</a>
+            <a href="#" class= "recipe-btn" data-id=${recipe.idMeal}>Get Recipe</a>
           </div>
         </div>
        
